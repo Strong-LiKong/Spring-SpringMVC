@@ -1,0 +1,366 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+}
+
+#topPanel {
+	flex-grow: 1;
+	min-height: 50px;
+	max-height: 50px;
+	background-color: rgb(116, 198, 181);
+	/*background-color: #17a2b8;*/
+	/*background-color: rgb(43,50,69);*/
+}
+
+#topPanel .logo_panel {
+	width: 300px;
+	height: 50px;
+	float: left;
+}
+
+#topPanel .logo_panel .logo_content_panel {
+	width: 30px;
+	height: 30px;
+	margin: 10px 10px 10px 70px;
+	float: left;
+	/*background-color: #696969;*/
+	/* background-image: url(../images/logo.png); */
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#topPanel .logo_panel .logo_content_panel span {
+	font-size: 20px;
+}
+
+#topPanel .logo_panel h3 {
+	color: #fff;
+	margin: 0;
+	line-height: 50px;
+	font-size: 1.2rem;
+}
+
+
+#topPanel .avatar1_panel {
+	width: 120px;
+	height: 50px;
+	float: right;
+	margin-right: 35px;
+}
+
+#topPanel .avatar1_panel .avatar1_content_panel {
+	width: 120px;
+	height: 40px;
+	margin: 5px;
+}
+
+#topPanel .avatar1_panel .avatar1_content_panel ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#topPanel .avatar1_panel .avatar1_content_panel ul li {
+	line-height: 40px;
+	background-color: #eeeeee;
+	cursor: pointer;
+}
+
+#topPanel .avatar1_panel .avatar1_content_panel ul li a {
+	display:inline-block;
+	padding-left: 45px;
+	width:120px;
+	color: grey;
+	text-decoration: none;
+}
+
+#topPanel .avatar1_panel .avatar1_content_panel ul li:hover {
+	background-color: #cccccc;
+}
+
+#topPanel .avatar1_panel .avatar1_content_panel .s_menu {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+#topPanel .avatar1_panel .avatar1_content_panel .u_name {
+	display: inline-block;
+	padding-left: 5px;
+	width: 65px;
+	height: 40px;
+}
+
+#topPanel .avatar1_panel .avatar1_content_panel .u_name>span {
+	font-size: .9em;
+}
+
+#topPanel .avatar1_panel .avatar1_content_panel .s_menu>img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 1.2px solid white;
+	cursor: pointer;
+}
+
+
+#bottomPanel {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+}
+
+#bottomPanel .menu_panel {
+	flex-grow: 1;
+	min-width: 200px;
+	max-width: 200px;
+	background-color: #EEEEEE;
+}
+
+#bottomPanel .menu_panel .menu_content_panel ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#bottomPanel .menu_panel .menu_content_panel ul li {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+
+#bottomPanel .menu_panel .menu_content_panel ul li a {
+	color: grey;
+	text-decoration: none;
+}
+
+#bottomPanel .menu_panel .menu_content_panel ul li:hover {
+	background-color: #ccc;
+}
+
+#bottomPanel .menu_panel .menu_content_panel ul li.active {
+	background-color: #ddd;
+}
+
+#bottomPanel .menu_panel .menu_content_panel ul li.active a {
+	color: rgb(116, 198, 181);
+}
+
+#bottomPanel .menu_panel .menu_content_panel ul li:not (.active ) a {
+	/*color: white;*/
+	
+}
+
+#bottomPanel .menu_panel .avatar_panel {
+	width: 200px;
+	height: 250px;
+	position: absolute;
+	bottom: 0;
+}
+
+#bottomPanel .menu_panel .avatar_panel .avatar_content_panel {
+	width: 150px;
+	height: 150px;
+	margin: 25px;
+}
+
+#bottomPanel .menu_panel .avatar_panel .avatar_content_panel>div {
+	background-image: url(../images/01.jpg);
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+
+#bottomPanel .menu_panel .avatar_panel .avatar_text_panel {
+	color: #1A1A1A;
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+
+#bottomPanel>.content_panel {
+	flex: 1;
+}
+
+.accountM {
+	display: none;
+}
+
+.roleM {
+	display: none;
+}
+
+.superM {
+	display: none;
+}
+
+.departM {
+	display: none;
+}
+
+.addM, .addR {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.addM .form-group {
+	width: 50%;
+	margin: 10px 0;
+}
+
+/*  2017.11.6*/
+.chart-button-pannel {
+	padding: 6px;
+}
+
+.chart-button-pannel .btn {
+	padding: 4px 6px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.showChart {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.form-group input, textarea, select {
+	margin-left: 20px;
+	min-height: 1.5em;
+}
+
+.addR .form-group {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.table .btn {
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+option {
+	min-height: 1.5em;
+}
+
+.save button {
+	float: right;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.active {
+	display: block;
+}
+
+/*.disappear {
+				display: none;
+			}*/
+.btn-info {
+	background-color: rgb(116, 198, 181);
+	border: 1px solid rgb(116, 198, 181);
+}
+
+.btn-info:hover {
+	background-color: #3CAE98;
+	border: 1px solid rgb(116, 198, 181);
+}
+
+.btn-danger {
+	background-color: #ff5252;
+	border: 1px solid #ff5252;
+}
+
+.btn-danger:hover {
+	background-color: #e53935;
+	border: 1px solid #e53935;
+}
+
+.table tbody tr td:first-child, .table tbody tr th:first-child {
+	width: 100px;
+}
+
+.table tbody tr td:last-child, .table tbody tr th:last-child {
+	width: 200px;
+}
+
+.page {
+	position: absolute;
+	bottom: 65px;
+	left: 45%;
+}
+
+.item-list .item-menu-group a {
+	display: none;
+}
+
+.item-list:hover .item-menu-group a {
+	display: inline-block;
+}
+
+.text-right {
+	text-align: left !important;
+}
+
+.not-hover:hover {
+	background-color: white !important;
+}
+
+.item-list {
+	height: 40px;
+}
+
+/*2017.11.5新增*/
+/*修改添加删除的图标大小*/
+.table thead tr th {
+	padding: 6px 6px;
+}
+
+.table thead button {
+	padding: 4px 6px;
+}
+
+.table tbody tr td {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.table tbody a.btn {
+	padding: 0 5px 2px;
+}
+
+.table tbody .iconfont {
+	font-size: 12px;
+}
+
+.page {
+	position: absolute;
+	bottom: 65px;
+	left: 45%;
+}
+
+.error-group input, .error-group textarea, .error-group select {
+	border: 1px solid red;
+	outline: none;
+}
+
+.error-group .error-tip {
+	padding-left: 5px;
+	color: red;
+}

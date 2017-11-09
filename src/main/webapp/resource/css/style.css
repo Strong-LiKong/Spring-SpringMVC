@@ -1,0 +1,65 @@
+/* margin style */
+.margin-bottom-20 {
+	margin-bottom: 1.25rem;
+}
+
+.margin-bottom-30 {
+	margin-bottom: 1.875rem;
+}
+
+/* button style */
+.btn {
+	cursor: pointer;
+}
+
+.u-btn-info {
+	background-color: #78dcd0;
+	border-color: #78dcd0;
+}
+
+/* icon style */
+i.fa {
+	margin-right: 0.625rem;
+}
+
+i.fa.fa-lg {
+	font-size: 2.25rem;
+}
+
+/* text-style */
+.font-size-12 {
+	font-size: 0.75rem;
+}
+
+.font-size-14 {
+	font-size: 0.875rem;
+}
+
+.font-weight-700 {
+	font-weight: 700;
+}
+
+.u-text-info {
+	color: #78dcd0;
+}
+
+.overflow-hideen {
+	overflow: hidden;
+}
+
+/* background-style */
+.u-bg-info {
+	background-color: #78dcd0;
+}
+
+.u-bg-darkpurple {
+	background-color: #6639b6;
+}
+
+.u-bg-pink {
+	background-color: #e91d61;
+}
+
+.u-bg-purple {
+	background-color: #9a69cb;
+}
